@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      .sect-one {
+        position: fixed;
+        background-image: url("./microsoft\ \ img\ .jpg");
+        background-size: cover;
+        height: 550px;
+        background-repeat: no-repeat;
+        margin-top: 142px;
+        position: relative;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .sect-one .part-one {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        font-size: 28px;
+      }
+      .sect-one .part-two {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        right: 62%;
+      }
+      .sect-one .part-three {
+        position: absolute;
+        text-align: center;
+        top: 56%;
+        left: 5%;
+      }
+      .sect-one .part-three .bt1 {
+        background-color: blue;
+        text-align: center;
+        color: whitesmoke;
+        border-style: none;
+        cursor: pointer;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .sect-nav .logo {
+        width: 100px;
+        float: left;
+        position: fixed;
+        top: 5;
+      }
+      .sect-nav {
+        position: fixed;
+        background-color: white;
+        padding: 10px 100px 10px 100px;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .sect-nav .left-nav {
+        text-align: left;
+        margin-left: 200px;
+      }
+      .sect-nav .left-nav ul li {
+        display: inline-block;
+        margin-left: 10px;
+        color: white;
+      }
+      .sect-nav .left-nav ul li a {
+        color: rgba(0, 0, 0, 0.778);
+        text-decoration: none;
+      }
+      .sect-nav .right-nav {
+        float: right;
+      }
+      .sect-nav .left-nav .microsoft {
+        float: right;
+        margin-right: 20px;
+      }
+
+      .sect-nav .right-nav .shopping-cart {
+        position: fixed;
+        cursor: pointer;
+        top: 25px;
+      }
+      .sect-notice {
+        position: fixed;
+        background-color: blue;
+        padding: 10px 100px 10px 100px;
+        top: 70px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .sect-notice a:link {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin-left: 20%;
+      }
+      .sect-notice a:hover {
+        text-decoration: underline;
+      }
+      .sect-one .part-four p {
+        position: absolute;
+        text-align: center;
+        top: 54%;
+        font-size: 18px;
+        margin-left: 20%;
+      }
+      .sect-one .part-four p a:link {
+        text-decoration: none;
+        color: black;
+      }
+      .sect-one .part-four p a:hover {
+        text-decoration: underline;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row wrap;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-left: 120px;
+        margin-right: 120px;
+      }
+      .flex-container > div {
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: underline;
+        color: blue;
+      }
+      .flex-container2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row wrap;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 1%;
+        margin-left: 46%;
+      }
+      .flex-container2 > div {
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: underline;
+        color: blue;
+      }
+      .flex-container3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: 5%;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .flex-container3 .part-one {
+        margin-left: 2%;
+        text-align: left;
+      }
+      .flex-container3 .part-two {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+      }
+      .flex-container3 .part-three {
+        margin-left: 10%;
+        text-align: left;
+      }
+      .flex-container3 .part-four {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+      }
+      .flex-container3 > div {
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+      }
+      .flex-container4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: 1%;
+        margin-right: 180px;
+      }
+      .flex-container4 .part-one {
+        text-align: left;
+        margin-right: 10%;
+      }
+      .flex-container4 .part-two {
+        text-align: left;
+        margin-right: 10%;
+      }
+      .flex-container4 .part-three {
+        text-align: left;
+        margin-right: 15%;
+      }
+      .flex-container4 .part-four {
+        text-align: left;
+        margin-right: 7%;
+      }
+      .flex-container4 a:link {
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .flex-container4 a:hover {
+        text-decoration: underline;
+      }
+      .flex-container5 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 1%;
+      }
+      .flex-container5 .part-one {
+        position: absolute;
+        font-size: 17px;
+        margin-top: 25%;
+        margin-right: 45%;
+        color: white;
+      }
+      .flex-container5 .part-two {
+        position: absolute;
+        margin-top: 32%;
+        margin-right: 58%;
+        color: white;
+      }
+      .flex-container5 .part-two .bt {
+        background-color: blue;
+        text-align: center;
+        color: whitesmoke;
+        border-style: none;
+        cursor: pointer;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sect-nav">
+      <div class="logo"><img src="/logo.png" alt="" /></div>
+      <div class="left-nav">
+        <ul>
+          <li class="home"><a href="index.html">Microsoft 365</a></li>
+          <li class="service"><a href="">Teams</a></li>
+          <li class="about"><a href="">Windows</a></li>
+          <li class="contact"><a href="">Surface</a></li>
+          <li class="about"><a href="">Xbox</a></li>
+          <li class="contact"><a href="">Deals</a></li>
+          <li class="about"><a href="">Small Business</a></li>
+          <li class="contact"><a href="">Support</a></li>
+          <li class="microsoft"><a href="">All Microsoft</a></li>
+        </ul>
+      </div>
+
+      <div class="right-nav">
+        <div class="shopping-cart">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="sect-notice">
+      <p>
+        <a href="default.asp" target="_blank"
+          >Congratulate and celebrate your grad with tech that's as impressive
+          as they are. shop gift ideas</a
+        >
+      </p>
+    </div>
+    <div class="sect-one">
+      <div class="part-one"><h3>Microsoft 365</h3></div>
+      <div class="part-two">
+        <p>
+          Turn your ideas into reality, stay safer online and off, and focus on
+          what matters most with Microsoft 365 apps
+        </p>
+      </div>
+      <div class="part-three">
+        <button class="bt1">For 1 person</button>
+      </div>
+      <div class="part-four">
+        <p><a href="default.asp" target="_blank">For up to 6 people</a></p>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div>
+        <img src="img1.webp" alt="device image" />
+        <p>Shop Surface devices</p>
+      </div>
+      <div>
+        <img src="img2.webp" alt="microsoft img" />
+        <p>Choose your Microsoft 365</p>
+      </div>
+      <div>
+        <img src="img3.webp" alt="xbox img" />
+        <p>Buy Xbox games and consoles</p>
+      </div>
+      <div>
+        <img src="img4.webp" alt="windows img" />
+        <p>Get Windows 11</p>
+      </div>
+      <div>
+        <img src="img5.webp" alt="accessories img" />
+        <p>Shop for accessories</p>
+      </div>
+    </div>
+
+    <div class="flex-container2">
+      <div>
+        <img src="img6.webp" alt="business img" />
+        <p>Shop Business</p>
+      </div>
+    </div>
+    <div class="flex-container3">
+      <div>
+        <img src="im1-scet2.jpg" alt="" />
+        <h3>Save up to $300 on Surafce Laptop 5</h3>
+        <p class="part-one">
+          Sophisticated style and multitasking speed powered by 12th Gen intel
+          Core. Offer ends 5/29.
+        </p>
+      </div>
+      <div>
+        <img src="img2 sect2.jpeg" alt="" />
+        <h3>Save up to $200 on Surface Pro 9</h3>
+        <p class="part-two">
+          The tablet flexibility you want and the laptop performance you need-
+          all in one ultra-portable device, offer ends 6/11.
+        </p>
+      </div>
+      <div>
+        <img src="im3 sect2.jpg" alt="" />
+        <h3>Xbox Series X</h3>
+        <p class="part-three">The fastest,most powerful Xbox ever.</p>
+      </div>
+      <div>
+        <img src="img4 sect 2 (1).jpg" alt="" />
+        <h3>Xbox Game Pass Ultimate</h3>
+        <p class="part-four">
+          Xbox Live Gold and hundreds of high-quality console and PC games. Play
+          together with friends and discover your next favorite game.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex-container4">
+      <p class="part-one">
+        <a href="default.asp" target="_blank">Shop Surface Laptop 5</a>
+      </p>
+      <p class="part-two">
+        <a href="default.asp" target="_blank">Shop Surface Pro 9</a>
+      </p>
+      <p class="part-three">
+        <a href="default.asp" target="_blank">Shop now</a>
+      </p>
+      <p class="part-four">
+        <a href="default.asp" target="_blank">Shop now</a>
+      </p>
+    </div>
+
+    <div class="flex-container5">
+      <div><img src="sect-3 image.jpg" alt="" /></div>
+
+      <div class="part-one">
+        <h3>Xbox Series S</h3>
+        <p>Nine in-game cosmetics, and virtual currency</p>
+      </div>
+      <div class="part-two">
+        <button class="bt">Shop Xbox Series S</button>
+      </div>
+    </div>
+  </body>
+</html>
